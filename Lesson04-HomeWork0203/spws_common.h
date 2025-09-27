@@ -33,7 +33,7 @@ typedef struct
 
 typedef struct
 {
-    int moitsture_min;
+    int moisture_min;
     int moisture_max;
     uint32_t sensor_period_ms;
     uint32_t status_period_ms;

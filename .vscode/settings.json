@@ -3,6 +3,7 @@
         "*.html": "html",
         "command.h": "c",
         "types.h": "c",
-        "spws_common.h": "c"
+        "spws_common.h": "c",
+        "time.h": "c"
     }
 }
