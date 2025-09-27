@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "*.html": "html",
-        "command.h": "c"
+        "command.h": "c",
+        "types.h": "c",
+        "spws_common.h": "c"
     }
 }

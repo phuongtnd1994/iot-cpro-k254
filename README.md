@@ -6,3 +6,6 @@ valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --errors-fo
 
 
 gcc -E main.c -o main.i
+
+cc -Wall -Wextra -O0 -g test_sensors.c sensors.c -o test_sensors
+./test_sensors
