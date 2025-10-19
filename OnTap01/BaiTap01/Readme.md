@@ -44,4 +44,7 @@
     - Chạy vòng lặp
 
 - 11: Làm thế nào để tìm bit có trọng số nhỏ nhất (Least Significant Bit - LSB)?
-    - x & (-x), vì ~x + 1
+    - x & (-x), vì ~x + 1 ra -x; tức là sẽ đảo tất cả các bit 0 -> 1 + 1 vào ở phía ngoài cùng bên phải đến bit 1 gần nhất
+
+- 12: Làm thế nào để tắt bit 1 ở ngoài cùng bên phải?
+    - x * (x-1)
