@@ -68,3 +68,4 @@
 |24|Đoạn mã sau có hợp lệ không?|Tạo con trỏ trỏ vào phần chỉ đọc mà sau đó lại thay đổi|
 |25|Các biến a, b, c, d được lưu ở đâu trong bộ nhớ?|a .data, b .rodata, c .rodata, d stack|
 |26|Đoạn mã sau có vấn đề gì?|Đệ quy không giới hạn vì không thấy điều kiện dừng lại ở đâu|
+|27|Đoạn mã sau có in ra đúng giá trị ban đầu không? Tại sao?||
