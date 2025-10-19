@@ -72,3 +72,4 @@
 |28|Đoạn mã sau có vấn đề gì?|str này trong hàm, là vùng nhớ cục bộ, nên là khi ra khỏi hàm thì sẽ bị xoá đi, và chương trình sẽ lỗi|
 |29|1. Kết quả in ra là gì?\n 2. Nếu bỏ từ khóa static, kết quả có khác không?\n 3. Biến count được lưu ở vùng nhớ nào?|in ra 1 2 3\n bỏ static khác vì biến count lúc này sẽ khởi tạo lại mỗi lần gọi trên stack \n biến count lưu ở .bss |
 |30|1. Code này có biên dịch được không?\n 2. Nếu không, compiler báo lỗi gì? Tại sao?|register gợi ý trình biên dịch nên để biến x ở thanh ghi của CPU, nên không cho dùng &|
+|31|sizeof(struct ab) và sizeof(struct ba) là bao nhiêu?| ab là 8 byte vì a 4 byte + b 1 byte + padding 3 byte là 8 byte, ba không có padding nên là 5 byte|
