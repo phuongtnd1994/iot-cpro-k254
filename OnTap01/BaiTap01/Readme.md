@@ -37,5 +37,8 @@
     - -x = (2^n) - x
     - ~x = (2^n -1) - x
     - (~x) + 1 = 2^n - x
-- 10: Làm thế nào để kiểm tra hai số có bằng nhau hay không mà không dùng toán tử so sánh?
+- 09: Làm thế nào để kiểm tra hai số có bằng nhau hay không mà không dùng toán tử so sánh?
     - xor mà ra bằng 0 thì là bằng nhau
+
+- 10: Làm thế nào để tìm bit có trọng số lớn nhất (Most Significant Bit - MSB)
+    - Chạy vòng lặp
