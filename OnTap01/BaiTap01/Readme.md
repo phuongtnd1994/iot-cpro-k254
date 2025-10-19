@@ -74,3 +74,4 @@
 |30|1. Code này có biên dịch được không?\n 2. Nếu không, compiler báo lỗi gì? Tại sao?|register gợi ý trình biên dịch nên để biến x ở thanh ghi của CPU, nên không cho dùng &|
 |31|sizeof(struct ab) và sizeof(struct ba) là bao nhiêu?| ab là 8 byte vì a 4 byte + b 1 byte + padding 3 byte là 8 byte, ba không có padding nên là 5 byte|
 |32|sizeof(mystruct) sẽ in ra gì?|In ra 8 byte: 4 byte + 1 byte + 3 byte padding|
+|33|sizeof(struct A) là bao nhiêu trên hệ thống 32-bit?| 32 bit = 4 bytes - căn theo 4 ; char 1 byte + 3 byte, int 4 byte , short 2 byte + 2 => 12 bytes |
