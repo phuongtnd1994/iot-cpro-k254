@@ -48,3 +48,7 @@
 
 - 12: Làm thế nào để tắt bit 1 ở ngoài cùng bên phải?
     - x * (x-1)
+
+- 13: Làm thế nào để cô lập bit 1 ở ngoài cùng bên phải?
+    - x & (-x)
+- 14: Làm thế nào để kiểm tra một số có phải là bội số của 8 hay không?
