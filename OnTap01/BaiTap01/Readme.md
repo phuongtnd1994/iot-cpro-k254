@@ -65,4 +65,4 @@
 |21|Đoạn mã sau có vấn đề gì không?|size char la 1, size int la 4, vậy 02 lần ++ sẽ trỏ đến vị trí sau 18 byte|
 |22|Có vấn đề gì với hàm copy sau?|Chưa khởi tạo cho con trỏ s1|
 |23|Đoạn mã sau có vấn đề gì không?|không free bộ nhớ sau khi cấp phát|
-|24|Đoạn mã sau có hợp lệ không?||
+|24|Đoạn mã sau có hợp lệ không?|Tạo con trỏ trỏ vào phần chỉ đọc mà sau đó lại thay đổi|
