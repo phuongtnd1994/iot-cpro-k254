@@ -76,3 +76,4 @@
 |32|sizeof(mystruct) sẽ in ra gì?|In ra 8 byte: 4 byte + 1 byte + 3 byte padding|
 |33|sizeof(struct A) là bao nhiêu trên hệ thống 32-bit?| 32 bit = 4 bytes - căn theo 4 ; char 1 byte + 3 byte, int 4 byte , short 2 byte + 2 => 12 bytes |
 |34|Ảnh hưởng của #pragma pack(1) là gì? Kết quả sizeof(struct B) là bao nhiêu trên hệ thống 32-bit?|đặt lại mức package là 1 bytes, lúc này size là 7 bytes|
+|35|Tính sizeof(struct Outer) trên hệ thống 32-bit.| Inner: 1 byte char + 3 padding + 4 byte int =8; int 4 bytes + 8 bytes Innter + 3 byte char + 1 = 16 bytes|
