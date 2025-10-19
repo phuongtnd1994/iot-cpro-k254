@@ -13,5 +13,10 @@
 - 04: Làm thế nào để kiểm tra một bit cụ thể đã được bật hay chưa?
     - x & (1u << n)
     - Khi tạo mặt nạ, dùng phép toán AND, sẽ chỉ giữ lại bit ở vị trí n, còn lại sẽ = 0
+- 05: Làm thế nào để hoán đổi hai số mà không cần biến thứ ba?
+    - a ^= b; b ^= a ; a ^= b
+    - a0 = a0 ^ b0; 
+    - b0 = bo ^ (a0 ^bo) = (b0 ^ bo0) ^ a0= a0; 
+    - a0 = (a0 ^ b0) ^ b0 = (a0 ^ b0) ^ a0 = (a0 ^ a0) ^ b0 = b0
 
 
