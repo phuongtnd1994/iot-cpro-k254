@@ -53,3 +53,7 @@
     - x & (-x)
 - 14: Làm thế nào để kiểm tra một số có phải là bội số của 8 hay không?
     - đuôi phải là x000 -> 0b111
+
+| Câu hỏi| Trả lời |
+|---------|--------|
+|15| chưa cấp phát bộ nhớ cho p|
