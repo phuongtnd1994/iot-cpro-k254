@@ -27,4 +27,13 @@
     - Can kiem tra xem duoi co so 1 hay khong la duoc
     
 - 06+1: Làm thế nào để đếm số bit 1 trong biểu diễn nhị phân của một số?
+    - Dùng buildin: __builtin_popcount
 
+- 07: Làm thế nào để kiểm tra một số là chẵn hay lẻ?
+    - Dùng phép toán And với 0..1
+
+- 08: Làm thế nào để tìm bù 2 (2’s complement) của một số nhị phân?
+    - x + (-x) mod 2^n = 0
+    - -x = (2^n) - x
+    - ~x = (2^n -1) - x
+    - (~x) + 1 = 2^n - x
