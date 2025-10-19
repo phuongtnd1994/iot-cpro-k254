@@ -55,7 +55,7 @@
     - đuôi phải là x000 -> 0b111
 
 | STT| Câu hỏi | Trả lời |
-|---------|--------|
+|---------|-----|--------|
 |15|Đoạn mã sau có vấn đề gì trong đoạn mã sau không? |chưa cấp phát bộ nhớ cho p|
 |16|Hàm hoạt động ra sao? Các biến được cấp phát ở đâu? | biến a,b  được cấp phát ở Unintialized Data (.bss), c được cấp phát ở Initialzied Data (.data), trong hàm thì trên stack, trừ h là static có giá trị nên sẽ ở .data, i malloc trên heap |
-|17|a và b được cấp phát và lưu trữ ở đâu?|a và b cùng nằm trên stack|
+|17|a và b được cấp phát và lưu trữ ở đâu?|a và b cùng nằm trên stack, b là biến constant nên sẽ ở .rodata|
