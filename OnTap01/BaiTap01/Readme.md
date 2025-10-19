@@ -60,4 +60,5 @@
 |16|Hàm hoạt động ra sao? Các biến được cấp phát ở đâu? | biến a,b  được cấp phát ở Unintialized Data (.bss), c được cấp phát ở Initialzied Data (.data), trong hàm thì trên stack, trừ h là static có giá trị nên sẽ ở .data, i malloc trên heap |
 |17|a và b được cấp phát và lưu trữ ở đâu?|a và b cùng nằm trên stack, b là biến constant nên sẽ ở .rodata|
 |18|Đoạn mã sau có vấn đề gì không? Với RAM = 2000 byte?|đoạn mã này sẽ lỗi vì có cấp phát mà không thu hồi bộ nhớ - 8 * 1000 = 8000 > 2000|
-|19|Đoạn mã sau có vấn đề gì không? Làm sao để in ra "hello"?|
+|19|Đoạn mã sau có vấn đề gì không? Làm sao để in ra "hello"?|khi chạy sẽ không in được do truyền vào giá trị và gán nên không được, phải truyền con trỏ con trỏ - xem code 19.c|
+|20|Các biến sau được lưu ở đâu?|a là .data, d .bss, b .data, c .rodata, g .data, h .rodata, i stack|
