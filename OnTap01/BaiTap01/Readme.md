@@ -81,3 +81,4 @@
 |37|sizeof(struct Test) là bao nhiêu trên hệ thống 32-bit?|Data = 4 bytes, Test = 1 byte + 3 pads + 4 bytes = 8bytes|
 |38|Kết quả khác nhau như thế nào giữa little-endian và big-endian?|litte-end thì 78 56 34 12, big-end thì ngược lại|
 |39|sizeof(struct Flags) là bao nhiêu?|ở đây dùng bit fiels, ép + vào = 8 bits < 4 bytes của unsigned int nên kết quả là 4|
+|40|"1. Giá trị flag, mode, value sẽ in ra bao nhiêu (giả sử hệ thống little-endian)?\n 2. Tại sao giá trị thay đổi khi chạy trên big-endian?\n 3. Giải thích cách compiler ánh xạ bit field vào raw.|1/ tinh tu 0b1010101111001101 thi flag 5 mode 25, value 171\n 2/ boi vi do la MSB -> lấy ngược từ trái sang \n 3/ lần lượt là 101 11001 10101011|
