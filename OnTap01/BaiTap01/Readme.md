@@ -54,6 +54,7 @@
 - 14: Làm thế nào để kiểm tra một số có phải là bội số của 8 hay không?
     - đuôi phải là x000 -> 0b111
 
-| Câu hỏi| Trả lời |
+| STT| Câu hỏi | Trả lời |
 |---------|--------|
-|15| chưa cấp phát bộ nhớ cho p|
+|15|Đoạn mã sau có vấn đề gì trong đoạn mã sau không? |chưa cấp phát bộ nhớ cho p|
+|16|Hàm hoạt động ra sao? Các biến được cấp phát ở đâu? | biến a,b  được cấp phát ở Unintialized Data (.bss), c được cấp phát ở Initialzied Data (.data), trong hàm thì trên stack, trừ h là static có giá trị nên sẽ ở .data |
