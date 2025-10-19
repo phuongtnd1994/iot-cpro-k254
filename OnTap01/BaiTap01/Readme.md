@@ -70,3 +70,4 @@
 |26|Đoạn mã sau có vấn đề gì?|Đệ quy không giới hạn vì không thấy điều kiện dừng lại ở đâu|
 |27|Đoạn mã sau có in ra đúng giá trị ban đầu không? Tại sao?|con trỏ int 4 byte, char 1 byte, thì bị đổi mất đuôi 1 byte|
 |28|Đoạn mã sau có vấn đề gì?|str này trong hàm, là vùng nhớ cục bộ, nên là khi ra khỏi hàm thì sẽ bị xoá đi, và chương trình sẽ lỗi|
+|29|1. Kết quả in ra là gì?\n 2. Nếu bỏ từ khóa static, kết quả có khác không?\n 3. Biến count được lưu ở vùng nhớ nào?|in ra 1 2 3\n bỏ static khác vì biến count lúc này sẽ khởi tạo lại mỗi lần gọi trên stack \n biến count lưu ở .bss |
