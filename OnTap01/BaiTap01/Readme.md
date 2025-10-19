@@ -63,4 +63,5 @@
 |19|Đoạn mã sau có vấn đề gì không? Làm sao để in ra "hello"?|khi chạy sẽ không in được do truyền vào giá trị và gán nên không được, phải truyền con trỏ con trỏ - xem code 19.c|
 |20|Các biến sau được lưu ở đâu?|a là .data, d .bss, b .data, c .rodata, g .data, h .rodata, i stack|
 |21|Đoạn mã sau có vấn đề gì không?|size char la 1, size int la 4, vậy 02 lần ++ sẽ trỏ đến vị trí sau 18 byte|
-|22|Có vấn đề gì với hàm copy sau?|Chưa khởi tạo cho s1|
+|22|Có vấn đề gì với hàm copy sau?|Chưa khởi tạo cho con trỏ s1|
+|23|Đoạn mã sau có vấn đề gì không?|không free bộ nhớ sau khi cấp phát|
