@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdint.h>
+#include <math.h>
 
 int find_msb_pos(unsigned int x)
 {
@@ -11,6 +12,14 @@ int find_msb_pos(unsigned int x)
     }
 
     return pos;
+}
+
+int find_with_log(unsigned int x)
+{
+    if (x == 0)
+        return -1;
+
+    return (int)floor(log2((double)x));
 }
 
 int main()

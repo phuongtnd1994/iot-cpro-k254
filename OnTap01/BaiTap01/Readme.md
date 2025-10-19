@@ -42,3 +42,6 @@
 
 - 10: Làm thế nào để tìm bit có trọng số lớn nhất (Most Significant Bit - MSB)
     - Chạy vòng lặp
+
+- 11: Làm thế nào để tìm bit có trọng số nhỏ nhất (Least Significant Bit - LSB)?
+    - x & (-x), vì ~x + 1
