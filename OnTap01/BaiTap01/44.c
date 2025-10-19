@@ -22,5 +22,9 @@ int main(void)
 
     printf("Size of union Frame: %ld\n", sizeof(union Frame));
 
+    union Frame frm = {.bytes = {0xAA, 0xBB}}; // 0xA35A
+
+    printf("len = %u, type = %u, crc = %u\n", frm.info.len, frm.info.type, frm.info.crc);
+
     return 0;
 }
