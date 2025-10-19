@@ -69,4 +69,4 @@
 |25|Các biến a, b, c, d được lưu ở đâu trong bộ nhớ?|a .data, b .rodata, c .rodata, d stack|
 |26|Đoạn mã sau có vấn đề gì?|Đệ quy không giới hạn vì không thấy điều kiện dừng lại ở đâu|
 |27|Đoạn mã sau có in ra đúng giá trị ban đầu không? Tại sao?|con trỏ int 4 byte, char 1 byte, thì bị đổi mất đuôi 1 byte|
-|28|Đoạn mã sau có vấn đề gì?||
+|28|Đoạn mã sau có vấn đề gì?|str này trong hàm, là vùng nhớ cục bộ, nên là khi ra khỏi hàm thì sẽ bị xoá đi, và chương trình sẽ lỗi|
