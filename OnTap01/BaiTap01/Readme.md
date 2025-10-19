@@ -66,3 +66,4 @@
 |22|Có vấn đề gì với hàm copy sau?|Chưa khởi tạo cho con trỏ s1|
 |23|Đoạn mã sau có vấn đề gì không?|không free bộ nhớ sau khi cấp phát|
 |24|Đoạn mã sau có hợp lệ không?|Tạo con trỏ trỏ vào phần chỉ đọc mà sau đó lại thay đổi|
+|25|Các biến a, b, c, d được lưu ở đâu trong bộ nhớ?|a .data, b .rodata, c .rodata, d stack|
