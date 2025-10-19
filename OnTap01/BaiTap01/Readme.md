@@ -79,3 +79,4 @@
 |35|Tính sizeof(struct Outer) trên hệ thống 32-bit.| Inner: 1 byte char + 3 padding + 4 byte int =8; int 4 bytes + 8 bytes Innter + 3 byte char + 1 = 16 bytes|
 |36|Trong đoạn mã sau, ab.b có giá trị là bao nhiêu?|char có 2 byte, union thì các thuộc tính dùng chung địa chỉ bộ nhớ, nên sẽ là 0xC4|
 |37|sizeof(struct Test) là bao nhiêu trên hệ thống 32-bit?|Data = 4 bytes, Test = 1 byte + 3 pads + 4 bytes = 8bytes|
+|38|Kết quả khác nhau như thế nào giữa little-endian và big-endian?|litte-end thì 78 56 34 12|
