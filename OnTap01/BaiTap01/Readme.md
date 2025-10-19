@@ -19,4 +19,7 @@
     - b0 = bo ^ (a0 ^bo) = (b0 ^ bo0) ^ a0= a0; 
     - a0 = (a0 ^ b0) ^ b0 = (a0 ^ b0) ^ a0 = (a0 ^ a0) ^ b0 = b0
 - 06: Viết 1 dòng code để kiểm tra n có phải lũy thừa của 2 không.
+    - Cac so luy thua 2 se co dang xxxx0
+    - Can kiem tra xem duoi co so 1 hay khong la duoc
+
 
