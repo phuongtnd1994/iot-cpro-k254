@@ -220,4 +220,6 @@ int main()
     printf("Chuoi truoc khi dao nguoc: %s\n", str23);
     fn_reverse_string(str23);
     printf("Chuoi sau khi dao nguoc: %s\n", str23);
+
+    // 24	Viết hàm nhập ma trận dùng con trỏ 2 chiều.
 }
