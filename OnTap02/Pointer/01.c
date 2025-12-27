@@ -71,5 +71,36 @@ int main()
 
     // 14	Tạo hàm nhập và in mảng bằng con trỏ.
 
-    fn_q14();
+    // fn_q14();
+
+    // 15	In kích thước kiểu dữ liệu thông qua con trỏ void.
+
+    double x15 = 10;
+    void *p15 = &x15;
+
+    printf("Kich thuoc kieu double = %zu bytes\n", sizeof(*(double *)p15));
+
+    // 16	Gán con trỏ p trỏ tới mảng a[5], in giá trị bằng p.
+
+    int a16[5] = {10, 20, 30, 40, 50};
+    int *p16;
+
+    p16 = a16;
+
+    for (int i = 0; i < 5; i++)
+    {
+        printf("Gia tri a16[%d] = %d\n", i, *(p16 + i));
+    }
+
+    // 17	Dùng con trỏ để đếm số ký tự trong chuỗi.
+    char str17[] = "123123123";
+    char *p17 = str17;
+
+    int count17 = 0;
+    while (*p17 != '\0')
+    {
+        count17++;
+        p17++;
+    }
+    printf("So ky tu trong chuoi = %d\n", count17);
 }
