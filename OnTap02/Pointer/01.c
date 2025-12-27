@@ -1,10 +1,19 @@
 #include <stdio.h>
 
-void function_swap(int *a, int *b)
+void fn_swap(int *a, int *b)
 {
     int temp = *a;
     *a = *b;
     *b = temp;
+}
+
+void fn_sum_array(int *arr, int size, int *sum)
+{
+    *sum = 0;
+    for (int i = 0; i < size; i++)
+    {
+        *sum += *(arr + i);
+    }
 }
 
 int main()
@@ -20,8 +29,15 @@ int main()
     int a = 5, b = 10;
 
     printf("Truoc khi swap: a = %d, b = %d\n", a, b);
-    function_swap(&a, &b);
+    fn_swap(&a, &b);
     printf("Sau khi swap: a = %d, b = %d\n", a, b);
 
     // 13	Dùng con trỏ để tính tổng các phần tử mảng.
+    int a13[] = {1, 2, 3, 4, 5};
+    int sizeOfA13 = sizeof(a13) / sizeof(a13[0]);
+
+    int sum = 0;
+    fn_sum_array(a13, sizeOfA13, &sum);
+
+    printf("Tong cac phan tu trong mang = %d\n", sum);
 }
