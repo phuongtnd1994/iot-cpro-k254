@@ -2,7 +2,7 @@
 
 echo ""
 
-fileName=2627.c
+fileName=28.c
 
 gcc -o a.out $fileName
 
