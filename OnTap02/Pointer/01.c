@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 void fn_swap(int *a, int *b)
 {
@@ -47,6 +48,45 @@ void fn_q14()
 void fn_increase(int *p)
 {
     (*p)++;
+}
+
+void fn_reverse_string(char *s)
+{
+    char *left = s;
+    char *right = s;
+    char temp;
+
+    while (*right != '\0')
+    {
+        right++;
+    }
+
+    // Bo ky tu \0
+    right--;
+
+    while (left < right)
+    {
+        temp = *left;
+        *left = *right;
+        *right = temp;
+        left++;
+        right--;
+    }
+}
+
+int *fn_max_element(int *a, int n)
+{
+    int *maxPtr = a;
+
+    for (int i = 1; i < n; i++)
+    {
+        if (*(a + i) > *maxPtr)
+        {
+            maxPtr = a + i;
+        }
+    }
+
+    return maxPtr;
 }
 
 int main()
@@ -135,4 +175,49 @@ int main()
     }
 
     // 20	Dùng con trỏ để sao chép chuỗi (không dùng strcpy).
+    char str20[] = "123123123";
+    char dsst20[20];
+
+    char *p20_src = str20;
+    char *p20_dst = dsst20;
+    while (*p20_src != '\0')
+    {
+        *p20_dst++ = *p20_src++;
+    }
+
+    *p20_dst = '\0';
+    printf("Chuoi sau khi sao chep: %s\n", dsst20);
+
+    // 21	Dùng malloc để cấp phát mảng 10 phần tử int và in chúng.
+    int *a21;
+    a21 = (int *)malloc(10 * sizeof(int));
+
+    if (a21 == NULL)
+    {
+        printf("Cap phat bo nho khong thanh cong!\n");
+        return 1;
+    }
+
+    for (int i = 0; i < 10; i++)
+    {
+        a21[i] = i * 10;
+        printf("a21[%d] = %d\n", i, a21[i]);
+    }
+
+    free(a21);
+
+    // 22	Viết hàm trả về con trỏ trỏ tới phần tử lớn nhất trong mảng.
+
+    int a22[] = {10, 50, 30, 70, 20};
+    int sizeOfA22 = sizeof(a22) / sizeof(a22[0]);
+    int *maxPtr = fn_max_element(a22, sizeOfA22);
+    printf("Phan tu lon nhat trong mang la: %d\n", *maxPtr);
+
+    // 23	Dùng con trỏ để đảo ngược chuỗi.
+
+    char str23[] = "Hello 123456!";
+
+    printf("Chuoi truoc khi dao nguoc: %s\n", str23);
+    fn_reverse_string(str23);
+    printf("Chuoi sau khi dao nguoc: %s\n", str23);
 }
