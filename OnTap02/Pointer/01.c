@@ -44,6 +44,11 @@ void fn_q14()
     fn_print_array(a, n);
 }
 
+void fn_increase(int *p)
+{
+    (*p)++;
+}
+
 int main()
 {
     // 11	Khai báo con trỏ trỏ đến biến int và in địa chỉ, giá trị.
@@ -103,4 +108,31 @@ int main()
         p17++;
     }
     printf("So ky tu trong chuoi = %d\n", count17);
+
+    // 18	Truyền con trỏ vào hàm để thay đổi giá trị biến gốc.
+    int x18 = 5;
+
+    fn_increase(&x18);
+    printf("Gia tri x18 sau khi tang len 1 = %d\n", x18);
+
+    // 19	So sánh địa chỉ của hai con trỏ trong cùng mảng.
+
+    int a19[] = {10, 20, 30, 40, 50};
+
+    int *p19_1 = &a19[1];
+    int *p19_2 = &a19[3];
+    if (p19_1 < p19_2)
+    {
+        printf("Dia chi p19_1 nho hon dia chi p19_2\n");
+    }
+    else if (p19_1 > p19_2)
+    {
+        printf("Dia chi p19_1 lon hon dia chi p19_2\n");
+    }
+    else
+    {
+        printf("Dia chi p19_1 bang dia chi p19_2\n");
+    }
+
+    // 20	Dùng con trỏ để sao chép chuỗi (không dùng strcpy).
 }
