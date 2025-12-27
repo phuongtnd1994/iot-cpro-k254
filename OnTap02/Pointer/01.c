@@ -16,6 +16,34 @@ void fn_sum_array(int *arr, int size, int *sum)
     }
 }
 
+void fn_input_array(int *ptr, int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        printf("Nhap phan tu thu %d: ", i);
+        scanf("%d", ptr + i);
+    }
+}
+
+void fn_print_array(int *ptr, int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        printf("Phan tu thu %d: %d\n", i, *(ptr + i));
+    }
+}
+
+void fn_q14()
+{
+    int a[100];
+    int n;
+
+    printf("Nhap so luong phan tu trong mang: ");
+    scanf("%d", &n);
+    fn_input_array(a, n);
+    fn_print_array(a, n);
+}
+
 int main()
 {
     // 11	Khai báo con trỏ trỏ đến biến int và in địa chỉ, giá trị.
@@ -40,4 +68,8 @@ int main()
     fn_sum_array(a13, sizeOfA13, &sum);
 
     printf("Tong cac phan tu trong mang = %d\n", sum);
+
+    // 14	Tạo hàm nhập và in mảng bằng con trỏ.
+
+    fn_q14();
 }
