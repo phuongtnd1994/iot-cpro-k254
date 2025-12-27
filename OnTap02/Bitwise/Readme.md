@@ -1,4 +1,5 @@
 |STT|Câu hỏi|
+|---|-------|
 |17|Viết 1 dòng code để bật bit thứ n của x.|
 |18|Viết 1 dòng code để tắt bit thứ n của x.|
 |19|Viết 1 dòng code để đảo bit thứ n của x.|
